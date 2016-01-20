@@ -1,4 +1,4 @@
-Simply utility script to get rid of crap like "smart quotes" and the like.  Tested on Python 2.7.10 and (except for i/o, which should be fine) on 3.4.0.
+Simple utility script to get rid of crap like "smart quotes" and the like.  Tested on Python 2.7.10 and (except for i/o, which should be fine) on 3.4.0.
 
 Targets the situation where you've copied-and-pasted in text from, say, Microsoft Word or a webpage into a text editor that saves by default in UTF-8 (like Sublime Text, Atom, etc. seem to do) for programmatic processing, displaying in HTML, etc., and then realize: "oh crap, I've got those horrible smart quotes or something in there, and now I have to figure out a bunch of arcane nonsense about encoding in order to keep them from showing up on my webpage or whev as question marks in black diamonds, or else manually search and replace them."
 
