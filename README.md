@@ -8,7 +8,7 @@ Usage: on command line.  `python cleanpunct.py YOURFILE.txt`
 
 Produces a file cleaned-YOURFILE.txt which replaces "smart quotes," (single and double) "m-dashes," "n-dashes," and curly apostrophes with their ASCII equivalents.  
 
-If you want fancier, add it to the "drek" dictionary yourself (all sane pull requests happily accepted).  Or just use [the demoroniser](https://www.fourmilab.ch/webtools/demoroniser/).  [ASCII damnit](https://github.com/tnajdek/ASCII--Dammit) might also work for you, but it gives me weird replacements on the text text.
+If you want fancier, add it to the "drek" dictionary yourself (all sane pull requests happily accepted).  Or just use [the demoroniser](https://www.fourmilab.ch/webtools/demoroniser/).  [ASCII damnit](https://github.com/tnajdek/ASCII--Dammit) might also work for you, but it gives me weird replacements on the test text.
 
 
 Currently, this targets the following unicode monstrosities, as represented internally by python 2: 
