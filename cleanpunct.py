@@ -18,8 +18,10 @@ def save(text, filename):
     f.write(text)
   return filename
 
+def diskClean(filename):
+  save(cleanFile(filename), filename)
+
 if __name__ == '__main__':
   import sys
   filename = sys.argv[1]
-  save(cleanFile(filename), filename)
-  
+  diskClean(filename)
