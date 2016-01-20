@@ -1,0 +1,3 @@
+OLD TEXT: This has some “st—upid ‘char−acters’, in its’ string.”
+
+OUTPUT: This has some "st-upid 'char-acters', in its' string."
