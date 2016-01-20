@@ -1,11 +1,25 @@
 # -*- coding: utf-8 -*-
-import io, sys
-filename = sys.argv[1]
 drek = {u'“': '"', u'”': '"', u"’": "'", u"‘": "'", u'—': '-', u'−': '-'}
-with io.open(filename,'r',encoding='utf8') as t:
-  text = t.read()
-for key in drek.keys():
-  text = text.replace(key, drek[key])
-filename = 'cleaned-' + filename
-with open(filename, 'w') as f:
+def clean(text):
+  for key in drek.keys():
+    text = text.replace(key, drek[key])
+  return text
+  
+def cleanFile(filename):
+  import io
+  with io.open(filename,'r',encoding='utf8') as t:
+    text = t.read()
+  newtext = clean(text)
+  return newtext
+
+def save(text, filename):
+  filename = 'cleaned-' + filename
+  with open(filename, 'w') as f:
     f.write(text)
+  return filename
+
+if __name__ == '__main__':
+  import sys
+  filename = sys.argv[1]
+  save(cleanFile(filename), filename)
+  
