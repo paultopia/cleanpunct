@@ -4,7 +4,7 @@ def clean(text):
   for key in drek.keys():
     text = text.replace(key, drek[key])
   return text
-  
+
 def cleanFile(filename):
   import io
   with io.open(filename,'r',encoding='utf8') as t:
@@ -12,14 +12,12 @@ def cleanFile(filename):
   newtext = clean(text)
   return newtext
 
-def save(text, filename):
+def diskClean(filename):
+  newtext = cleanFile(filename)
   filename = 'cleaned-' + filename
   with open(filename, 'w') as f:
-    f.write(text)
+    f.write(newtext)
   return filename
-
-def diskClean(filename):
-  save(cleanFile(filename), filename)
 
 if __name__ == '__main__':
   import sys
