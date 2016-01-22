@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-drek = {u'“': '"', u'”': '"', u"’": "'", u"‘": "'", u'—': '-', u'−': '-'}
+drek = {u'“': '"', u'”': '"', u"’": "'", u"‘": "'", u'—': '-', u'−': '-', u'…': '...'}
 def clean(text):
   for key in drek.keys():
     text = text.replace(key, drek[key])

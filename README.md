@@ -6,7 +6,7 @@ Manually search and replace no longer, my friend.
 
 Usage: on command line.  `python cleanpunct.py YOURFILE.txt`
 
-Produces a file cleaned-YOURFILE.txt which replaces "smart quotes," (single and double) "m-dashes," "n-dashes," and curly apostrophes with their ASCII equivalents.  
+Produces a file cleaned-YOURFILE.txt which replaces "smart quotes," (single and double) "m-dashes," "n-dashes," ellipses, and curly apostrophes with their ASCII equivalents.  
 
 also can be `import`ed, in which case `cleanpunct.clean(STRING)` returns the cleaned text from a string; `cleanpunct.cleanFile(FILENAME)` returns the cleaned text from a file, and `cleanpunct.diskClean(FILENAME)` cleans a file on disk and returns the new filename.
 
